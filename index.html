@@ -1,190 +1,289 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Native Newsletter</title>
-  <style>
-    :root {
-      --title: #0D0D0D;
-      --primary: #17E0B9;
-      --secondary: #0059FF;
-      --accent: #52F298;
-      --highlight: #8C6A03;
-      --text: #0D0D0D;
-      --background: #F9FAFB;
-      --light: #ffffff;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Inter", sans-serif;
-    }
-
-    body {
-      background: var(--background);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    header {
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-
-    header img {
-      width: 80px;
-      margin-bottom: 1rem;
-    }
-
-    header h1 {
-      font-size: 2rem;
-      font-weight: 800;
-      color: var(--title);
-      margin-bottom: 0.5rem;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      color: var(--secondary);
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    main {
-      text-align: center;
-      padding: 3rem 1rem;
-    }
-
-    .benefits {
-      margin: 2rem auto;
-      max-width: 700px;
-      text-align: left;
-      background: var(--light);
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
-
-    .benefits h2 {
-      color: var(--primary);
-      margin-bottom: 1rem;
-    }
-
-    .benefits ul {
-      list-style: none;
-    }
-
-    .benefits li {
-      margin: 0.5rem 0;
-      display: flex;
-      align-items: center;
-      color: var(--text);
-    }
-
-    .benefits li::before {
-      content: "✔️";
-      margin-right: 0.5rem;
-    }
-
-    form {
-      margin: 2rem auto;
-      max-width: 500px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    input[type="email"] {
-      padding: 0.8rem 1rem;
-      width: 100%;
-      border-radius: 8px;
-      border: 2px solid var(--secondary);
-      font-size: 1rem;
-    }
-
-    button {
-      padding: 1rem 2rem;
-      border: none;
-      border-radius: 8px;
-      font-size: 1.1rem;
-      font-weight: bold;
-      background: var(--accent);
-      color: var(--text);
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    button:hover {
-      background: var(--highlight);
-      color: var(--light);
-    }
-
-    .trust {
-      font-size: 0.9rem;
-      color: #555;
-      margin-top: 1rem;
-    }
-
-    .social-proof {
-      margin-top: 2rem;
-      font-style: italic;
-      color: var(--secondary);
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      color: #666;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.6rem;
-      }
-      .benefits {
-        padding: 1.5rem;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Native.es | Transforma tu SaaS a AI Native</title>
+    <!-- Tailwind CSS via CDN for a pure HTML/CSS setup without NodeJS -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            /* Primary Palette */
+            --color-primary: #2F6FDB;
+            --color-primary-dark: #1F4FA3;
+            --color-secondary: #2EC4A6;
+            --color-secondary-dark: #1FA88E;
+            --color-accent: #F2C500;
+            --color-accent-dark: #D4A800;
+            
+            /* Neutrals */
+            --color-neutral-dark: #3A3A3A;
+            --color-neutral-mid: #7A7A7A;
+            --color-neutral-light: #E6E6E6;
+            
+            /* Fonts */
+            --font-sans: 'Inter', system-ui, sans-serif;
+        }
+        body {
+            background-color: var(--color-neutral-light);
+            color: var(--color-neutral-dark);
+            font-family: var(--font-sans);
+        }
+    </style>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <img src="https://substackcdn.com/image/fetch/$s_!d0wd!,w_780,h_780,c_fill,f_webp,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb06692c9-9512-4a82-a9d6-74b3a4fe273b_168x168.png" alt="Logo AI Native">
-    <h1>AI Native Newsletter</h1>
-    <p>¿Cómo convertir tu plataforma SaaS a AI Native?</p>
-  </header>
+<body class="antialiased selection:bg-primary selection:text-white">
 
-  <main>
-    <section class="benefits">
-      <h2>¿Por qué unirte?</h2>
-      <ul>
-        <li>Entiende los patrones de arquitectura orientados a la IA.</li>
-        <li>Conoce casos de éxito de SaaS que ya son AI Native.</li>
-        <li>Aprende a trabajar con la IA.</li>
-        <li>Aprovechate de las experiencias de líderes técnicos.</li>
-        <li>Accede a recursos exclusivos.</li>
-        <li>Y todo en español.</li>
-      </ul>
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-neutral-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <!-- Logo -->
+                <div class="h-10 w-10 shrink-0">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-full drop-shadow-sm">
+                        <circle cx="100" cy="100" r="85" fill="none" stroke="#3A3A3A" stroke-width="4"/>
+                        <g transform="translate(100, 100)">
+                            <line x1="-60" y1="-60" x2="60" y2="60" stroke="#7A7A7A" stroke-width="2"/>
+                            <line x1="-60" y1="60" x2="60" y2="-60" stroke="#7A7A7A" stroke-width="2"/>
+                            <circle cx="-60" cy="-60" r="5" fill="#7A7A7A"/>
+                            <circle cx="60" cy="-60" r="5" fill="#7A7A7A"/>
+                            <circle cx="-60" cy="60" r="5" fill="#7A7A7A"/>
+                            <circle cx="60" cy="60" r="5" fill="#7A7A7A"/>
+                            <path d="M -25 -25 L -20 -35 L -35 -35 L -30 -45" fill="none" stroke="#7A7A7A" stroke-width="2" stroke-linejoin="bevel"/>
+                            <path d="M 25 -25 L 20 -35 L 35 -35 L 30 -45" fill="none" stroke="#7A7A7A" stroke-width="2" stroke-linejoin="bevel"/>
+                            <path d="M -25 25 L -20 35 L -35 35 L -30 45" fill="none" stroke="#7A7A7A" stroke-width="2" stroke-linejoin="bevel"/>
+                            <path d="M 25 25 L 20 35 L 35 35 L 30 45" fill="none" stroke="#7A7A7A" stroke-width="2" stroke-linejoin="bevel"/>
+                            <circle cx="0" cy="0" r="18" fill="#F2C500"/>
+                            <line x1="-85" y1="0" x2="85" y2="0" stroke="#3A3A3A" stroke-width="2"/>
+                            <line x1="0" y1="-85" x2="0" y2="85" stroke="#3A3A3A" stroke-width="2"/>
+                            <circle cx="0" cy="-85" r="6" fill="#2F6FDB"/>
+                            <circle cx="0" cy="85" r="6" fill="#2F6FDB"/>
+                            <circle cx="-85" cy="0" r="6" fill="#2EC4A6"/>
+                            <circle cx="85" cy="0" r="6" fill="#2EC4A6"/>
+                            <polygon points="0,-85 -14,-14 0,0" fill="#2F6FDB"/>
+                            <polygon points="0,-85 14,-14 0,0" fill="#1F4FA3"/>
+                            <polygon points="0,85 -14,14 0,0" fill="#1F4FA3"/>
+                            <polygon points="0,85 14,14 0,0" fill="#2F6FDB"/>
+                            <polygon points="-85,0 -14,-14 0,0" fill="#2EC4A6"/>
+                            <polygon points="-85,0 -14,14 0,0" fill="#1FA88E"/>
+                            <polygon points="85,0 14,-14 0,0" fill="#1FA88E"/>
+                            <polygon points="85,0 14,14 0,0" fill="#2EC4A6"/>
+                            <circle cx="0" cy="0" r="4" fill="#3A3A3A"/>
+                        </g>
+                    </svg>
+                </div>
+                <span class="font-bold text-xl text-neutral-dark tracking-tight">AI-Native.es</span>
+            </div>
+            <a href="#subscribe" class="bg-primary hover:bg-primary-dark text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 shadow-sm hover:shadow-md">
+                Suscribirse
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-16 pb-24 lg:pt-24 lg:pb-32 overflow-hidden">
+        <!-- Background decorative elements -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 opacity-30 pointer-events-none">
+            <div class="absolute top-20 left-0 w-96 h-96 bg-secondary rounded-full mix-blend-multiply filter blur-[100px] opacity-40 animate-pulse" style="animation-duration: 4s;"></div>
+            <div class="absolute top-40 right-0 w-96 h-96 bg-primary rounded-full mix-blend-multiply filter blur-[100px] opacity-40 animate-pulse" style="animation-duration: 5s;"></div>
+            <div class="absolute -bottom-20 left-1/3 w-96 h-96 bg-accent rounded-full mix-blend-multiply filter blur-[100px] opacity-30 animate-pulse" style="animation-duration: 6s;"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+                <div class="max-w-2xl">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-neutral-dark leading-[1.1] mb-6">
+                        Transforma tu desarrollo de software desde <span class="text-primary">Cloud Native</span> hasta <span class="text-secondary">AI Native</span>.
+                    </h1>
+                    <p class="text-lg md:text-xl text-neutral-mid mb-10 leading-relaxed font-light">
+                        Si eres ingeniero de software, arquitecto de sistemas, CTO o director de ingeniería, aquí encontrarás los conocimientos y herramientas prácticas para dar el salto hacia la inteligencia artificial.
+                    </p>
+                    
+                    <div id="subscribe" class="bg-white p-2 rounded-2xl shadow-2xl border border-neutral-light/50 inline-block w-full max-w-[496px] relative z-20">
+                        <!-- Substack iframe (width changed to 100% for responsiveness) -->
+                        <iframe src="https://ainativebrujula.substack.com/embed" width="100%" height="320" style="border: 1px solid #E6E6E6; background: white; border-radius: 12px;" frameborder="0" scrolling="no"></iframe>
+                    </div>
+                </div>
+                
+                <div class="hidden lg:block relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-secondary/20 rounded-3xl transform rotate-3 scale-105"></div>
+                    <div class="relative bg-white p-10 rounded-3xl shadow-xl border border-neutral-light/50">
+                        <h3 class="text-xl font-bold text-neutral-dark mb-8">¿Para quién es esta newsletter?</h3>
+                        <div class="space-y-8">
+                            <div class="flex items-center gap-5">
+                                <div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-lg text-neutral-dark">Ingenieros de Software</h4>
+                                    <p class="text-neutral-mid">Refinando microservicios y código</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-5">
+                                <div class="w-14 h-14 rounded-full bg-secondary/10 flex items-center justify-center text-secondary shrink-0">
+                                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-lg text-neutral-dark">Arquitectos de Sistemas</h4>
+                                    <p class="text-neutral-mid">Diseñando plataformas resilientes</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-5">
+                                <div class="w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center text-accent-dark shrink-0">
+                                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-lg text-neutral-dark">CTOs y Directores</h4>
+                                    <p class="text-neutral-mid">Trazando el roadmap tecnológico</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <form>
-      
-      <!-- <input type="email" placeholder="Tu mejor email ✉️" required> -->
-      <!-- <button type="submit">¡Quiero ser AI Native!</button> -->
-      <iframe src="https://ainativebrujula.substack.com/embed" width="480" height="320" style="background:#F9FAFB;" frameborder="0" scrolling="no"></iframe>
-      <p class="trust">1 email cada 2 semanas · Nada de spam · Tu correo está seguro</p>
-    </form>
+    <!-- Features Section -->
+    <section class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-neutral-dark mb-4">Cada 2 semanas encontrarás:</h2>
+                <p class="text-lg text-neutral-mid">Conocimientos, arquitectura del mundo real y consejos de expertos para guiar tu transición a la IA.</p>
+            </div>
 
-    <!-- <p class="social-proof">💬 “Gracias a AI Native estamos 6 meses por delante en nuestra adopción de IA” — CTO de startup SaaS</p> -->
-  </main>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-neutral-light/20 rounded-3xl p-8 border border-neutral-light hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-neutral-dark mb-3">Guías paso a paso</h3>
+                    <p class="text-neutral-mid leading-relaxed">Con ejemplos de código y diagramas que muestran cómo integrar IA de forma escalable y segura.</p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="bg-neutral-light/20 rounded-3xl p-8 border border-neutral-light hover:border-secondary/30 hover:shadow-lg hover:shadow-secondary/5 transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-secondary/10 rounded-2xl flex items-center justify-center mb-6 text-secondary group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-neutral-dark mb-3">Casos de éxito reales</h3>
+                    <p class="text-neutral-mid leading-relaxed">De empresas SaaS que ya son AI Native, con métricas de rendimiento y aprendizajes clave.</p>
+                </div>
 
-  <footer>
-    © 2025 AI Native Newsletter
-  </footer>
+                <!-- Card 3 -->
+                <div class="bg-neutral-light/20 rounded-3xl p-8 border border-neutral-light hover:border-accent/50 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-accent/10 rounded-2xl flex items-center justify-center mb-6 text-accent-dark group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-neutral-dark mb-3">Entrevistas a expertos</h3>
+                    <p class="text-neutral-mid leading-relaxed">Desde VPs de Ingeniería hasta CEOs de startups que comparten sus estrategias y recomendaciones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits & CTA Section -->
+    <section class="py-24 bg-neutral-dark text-white relative overflow-hidden">
+        <!-- Decorative background -->
+        <div class="absolute inset-0 opacity-5">
+            <svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M0 40L40 0H20L0 20M40 40V20L20 40" stroke="currentColor" stroke-width="1" fill="none"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid-pattern)"/>
+            </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Al suscribirte, obtendrás acceso a:</h2>
+                    <p class="text-xl text-neutral-light/80 mb-10 font-light">Únete a nuestra comunidad y recibe inmediatamente material premium para tu transición.</p>
+                    
+                    <ul class="space-y-8">
+                        <li class="flex items-start gap-5">
+                            <div class="mt-1 w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center shrink-0 border border-secondary/30">
+                                <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold mb-2">Recursos exclusivos</h4>
+                                <p class="text-neutral-light/70 leading-relaxed">Documentos técnicos, playbooks de implementación y patrones de arquitectura listos para usar.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-5">
+                            <div class="mt-1 w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center shrink-0 border border-primary/30">
+                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold mb-2">Una comunidad activa</h4>
+                                <p class="text-neutral-light/70 leading-relaxed">Donde podrás intercambiar dudas, consejos y experiencias con tus colegas de la industria.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white/5 border border-white/10 rounded-3xl p-8 md:p-12 text-center backdrop-blur-md relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-accent/20 rounded-full filter blur-3xl"></div>
+                    <div class="relative z-10">
+                        <h3 class="text-3xl font-bold mb-4">¿Listo para evolucionar?</h3>
+                        <p class="text-neutral-light/80 mb-8 text-lg">Da el siguiente paso en la evolución de tu producto SaaS y conviértete en un pionero de la IA.</p>
+                        <a href="#subscribe" class="inline-block w-full bg-accent hover:bg-accent-dark text-neutral-dark font-bold text-lg px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-accent/20 hover:shadow-accent/40 hover:-translate-y-1">
+                            Suscríbete gratis
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12 border-t border-neutral-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-3">
+                <div class="h-8 w-8 shrink-0 grayscale opacity-60">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                        <circle cx="100" cy="100" r="85" fill="none" stroke="#3A3A3A" stroke-width="4"/>
+                        <g transform="translate(100, 100)">
+                            <line x1="-60" y1="-60" x2="60" y2="60" stroke="#7A7A7A" stroke-width="2"/>
+                            <line x1="-60" y1="60" x2="60" y2="-60" stroke="#7A7A7A" stroke-width="2"/>
+                            <circle cx="-60" cy="-60" r="5" fill="#7A7A7A"/>
+                            <circle cx="60" cy="-60" r="5" fill="#7A7A7A"/>
+                            <circle cx="-60" cy="60" r="5" fill="#7A7A7A"/>
+                            <circle cx="60" cy="60" r="5" fill="#7A7A7A"/>
+                            <path d="M -25 -25 L -20 -35 L -35 -35 L -30 -45" fill="none" stroke="#7A7A7A" stroke-width="2" stroke-linejoin="bevel"/>
+                            <path d="M 25 -25 L 20 -35 L 35 -35 L 30 -45" fill="none" stroke="#7A7A7A" stroke-width="2" stroke-linejoin="bevel"/>
+                            <path d="M -25 25 L -20 35 L -35 35 L -30 45" fill="none" stroke="#7A7A7A" stroke-width="2" stroke-linejoin="bevel"/>
+                            <path d="M 25 25 L 20 35 L 35 35 L 30 45" fill="none" stroke="#7A7A7A" stroke-width="2" stroke-linejoin="bevel"/>
+                            <circle cx="0" cy="0" r="18" fill="#F2C500"/>
+                            <line x1="-85" y1="0" x2="85" y2="0" stroke="#3A3A3A" stroke-width="2"/>
+                            <line x1="0" y1="-85" x2="0" y2="85" stroke="#3A3A3A" stroke-width="2"/>
+                            <circle cx="0" cy="-85" r="6" fill="#2F6FDB"/>
+                            <circle cx="0" cy="85" r="6" fill="#2F6FDB"/>
+                            <circle cx="-85" cy="0" r="6" fill="#2EC4A6"/>
+                            <circle cx="85" cy="0" r="6" fill="#2EC4A6"/>
+                            <polygon points="0,-85 -14,-14 0,0" fill="#2F6FDB"/>
+                            <polygon points="0,-85 14,-14 0,0" fill="#1F4FA3"/>
+                            <polygon points="0,85 -14,14 0,0" fill="#1F4FA3"/>
+                            <polygon points="0,85 14,14 0,0" fill="#2F6FDB"/>
+                            <polygon points="-85,0 -14,-14 0,0" fill="#2EC4A6"/>
+                            <polygon points="-85,0 -14,14 0,0" fill="#1FA88E"/>
+                            <polygon points="85,0 14,-14 0,0" fill="#1FA88E"/>
+                            <polygon points="85,0 14,14 0,0" fill="#2EC4A6"/>
+                            <circle cx="0" cy="0" r="4" fill="#3A3A3A"/>
+                        </g>
+                    </svg>
+                </div>
+                <span class="font-semibold text-neutral-mid">AI-Native.es</span>
+            </div>
+            <p class="text-neutral-mid text-sm">© 2024 AI-Native.es. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
 </body>
 </html>

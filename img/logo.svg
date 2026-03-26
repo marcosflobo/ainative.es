@@ -1,0 +1,31 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                                <circle cx="100" cy="100" r="85" fill="none" stroke="#3A3A3A" stroke-width="4"></circle>
+                                <g transform="translate(100, 100)">
+                                    <line x1="-60" y1="-60" x2="60" y2="60" stroke="#7A7A7A" stroke-width="2"></line>
+                                    <line x1="-60" y1="60" x2="60" y2="-60" stroke="#7A7A7A" stroke-width="2"></line>
+                                    <circle cx="-60" cy="-60" r="5" fill="#7A7A7A"></circle>
+                                    <circle cx="60" cy="-60" r="5" fill="#7A7A7A"></circle>
+                                    <circle cx="-60" cy="60" r="5" fill="#7A7A7A"></circle>
+                                    <circle cx="60" cy="60" r="5" fill="#7A7A7A"></circle>
+                                    <path d="M -25 -25 L -20 -35 L -35 -35 L -30 -45" fill="none" stroke="#7A7A7A" stroke-width="2" stroke-linejoin="bevel"></path>
+                                    <path d="M 25 -25 L 20 -35 L 35 -35 L 30 -45" fill="none" stroke="#7A7A7A" stroke-width="2" stroke-linejoin="bevel"></path>
+                                    <path d="M -25 25 L -20 35 L -35 35 L -30 45" fill="none" stroke="#7A7A7A" stroke-width="2" stroke-linejoin="bevel"></path>
+                                    <path d="M 25 25 L 20 35 L 35 35 L 30 45" fill="none" stroke="#7A7A7A" stroke-width="2" stroke-linejoin="bevel"></path>
+                                    <circle cx="0" cy="0" r="18" fill="#F2C500"></circle>
+                                    <line x1="-85" y1="0" x2="85" y2="0" stroke="#3A3A3A" stroke-width="2"></line>
+                                    <line x1="0" y1="-85" x2="0" y2="85" stroke="#3A3A3A" stroke-width="2"></line>
+                                    <circle cx="0" cy="-85" r="6" fill="#2F6FDB"></circle>
+                                    <circle cx="0" cy="85" r="6" fill="#2F6FDB"></circle>
+                                    <circle cx="-85" cy="0" r="6" fill="#2EC4A6"></circle>
+                                    <circle cx="85" cy="0" r="6" fill="#2EC4A6"></circle>
+                                    <polygon points="0,-85 -14,-14 0,0" fill="#2F6FDB"></polygon>
+                                    <polygon points="0,-85 14,-14 0,0" fill="#1F4FA3"></polygon>
+                                    <polygon points="0,85 -14,14 0,0" fill="#1F4FA3"></polygon>
+                                    <polygon points="0,85 14,14 0,0" fill="#2F6FDB"></polygon>
+                                    <polygon points="-85,0 -14,-14 0,0" fill="#2EC4A6"></polygon>
+                                    <polygon points="-85,0 -14,14 0,0" fill="#1FA88E"></polygon>
+                                    <polygon points="85,0 14,-14 0,0" fill="#1FA88E"></polygon>
+                                    <polygon points="85,0 14,14 0,0" fill="#2EC4A6"></polygon>
+                                    <circle cx="0" cy="0" r="4" fill="#3A3A3A"></circle>
+                                </g>
+                            </svg>

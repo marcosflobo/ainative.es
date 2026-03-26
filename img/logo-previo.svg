@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (1:1.3.2+202311252150+091e20ef0f)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.72693603"
+     inkscape:cx="396.87124"
+     inkscape:cy="561.25984"
+     inkscape:window-width="1848"
+     inkscape:window-height="1016"
+     inkscape:window-x="72"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <path
+       id="knot-segment"
+       d="M0,10 C0,0 20,0 20,10 S0,20 0,10" />
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <!-- Nudo celta exterior -->
+    <g
+       fill="none"
+       stroke="#333333"
+       stroke-width="3"
+       id="g9"
+       transform="matrix(0.26458333,0,0,0.26458333,78.58125,121.97292)">
+      <!-- Repetición de segmentos alrededor del círculo -->
+      <g
+         transform="translate(100,100)"
+         id="g8">
+        <g
+           id="knot-ring">
+          <use
+             href="#knot-segment"
+             id="use1" />
+          <use
+             href="#knot-segment"
+             transform="rotate(45)"
+             id="use2" />
+          <use
+             href="#knot-segment"
+             transform="rotate(90)"
+             id="use3" />
+          <use
+             href="#knot-segment"
+             transform="rotate(135)"
+             id="use4" />
+          <use
+             href="#knot-segment"
+             transform="scale(-1)"
+             id="use5" />
+          <use
+             href="#knot-segment"
+             transform="rotate(-135)"
+             id="use6" />
+          <use
+             href="#knot-segment"
+             transform="rotate(-90)"
+             id="use7" />
+          <use
+             href="#knot-segment"
+             transform="rotate(-45)"
+             id="use8" />
+        </g>
+      </g>
+    </g>
+    <!-- Círculo interior de separación -->
+    <circle
+       cx="105.03958"
+       cy="148.43124"
+       r="20.637501"
+       stroke="#333333"
+       stroke-width="0.529167"
+       fill="none"
+       id="circle9" />
+    <!-- Puntas de brújula estilizadas -->
+    <polygon
+       points="100,80 90,90 100,20 110,90 "
+       fill="#4a90e2"
+       id="polygon9"
+       transform="matrix(0.26458333,0,0,0.26458333,78.58125,121.97292)" />
+    <polygon
+       points="120,100 110,90 180,100 110,110 "
+       fill="#50e3c2"
+       id="polygon10"
+       transform="matrix(0.26458333,0,0,0.26458333,78.58125,121.97292)" />
+    <polygon
+       points="100,120 110,110 100,180 90,110 "
+       fill="#4a90e2"
+       id="polygon11"
+       transform="matrix(0.26458333,0,0,0.26458333,78.58125,121.97292)" />
+    <polygon
+       points="80,100 90,110 20,100 90,90 "
+       fill="#50e3c2"
+       id="polygon12"
+       transform="matrix(0.26458333,0,0,0.26458333,78.58125,121.97292)" />
+    <!-- Puntas intermedias finas -->
+    <polygon
+       points="140,50 130,60 145,40 150,60 "
+       fill="#666666"
+       id="polygon13"
+       transform="matrix(0.26458333,0,0,0.26458333,78.58125,121.97292)" />
+    <polygon
+       points="150,140 140,130 160,145 140,150 "
+       fill="#666666"
+       id="polygon14"
+       transform="matrix(0.26458333,0,0,0.26458333,78.58125,121.97292)" />
+    <polygon
+       points="65,150 55,130 55,160 45,140 "
+       fill="#666666"
+       id="polygon15"
+       transform="matrix(0.26458333,0,0,0.26458333,78.58125,121.97292)" />
+    <polygon
+       points="50,60 60,70 40,55 60,50 "
+       fill="#666666"
+       id="polygon16"
+       transform="matrix(0.26458333,0,0,0.26458333,78.58125,121.97292)" />
+    <!-- Núcleo y circuitos radiales -->
+    <circle
+       cx="105.03958"
+       cy="148.43124"
+       r="3.175"
+       fill="#ffcc00"
+       id="circle16"
+       style="stroke-width:0.264583" />
+    <line
+       x1="105.03958"
+       y1="148.43124"
+       x2="105.03958"
+       y2="127.26458"
+       stroke="#333333"
+       stroke-width="0.529167"
+       stroke-linecap="round"
+       id="line16" />
+    <line
+       x1="105.03958"
+       y1="148.43124"
+       x2="126.20625"
+       y2="148.43124"
+       stroke="#333333"
+       stroke-width="0.529167"
+       stroke-linecap="round"
+       id="line17" />
+    <line
+       x1="105.03958"
+       y1="148.43124"
+       x2="105.03958"
+       y2="169.59792"
+       stroke="#333333"
+       stroke-width="0.529167"
+       stroke-linecap="round"
+       id="line18" />
+    <line
+       x1="105.03958"
+       y1="148.43124"
+       x2="83.872917"
+       y2="148.43124"
+       stroke="#333333"
+       stroke-width="0.529167"
+       stroke-linecap="round"
+       id="line19" />
+    <!-- Conexiones diagonales -->
+    <line
+       x1="105.03958"
+       y1="148.43124"
+       x2="119.59167"
+       y2="133.87917"
+       stroke="#666666"
+       stroke-width="0.529167"
+       stroke-linecap="round"
+       id="line20" />
+    <line
+       x1="105.03958"
+       y1="148.43124"
+       x2="119.59167"
+       y2="162.98334"
+       stroke="#666666"
+       stroke-width="0.529167"
+       stroke-linecap="round"
+       id="line21" />
+    <line
+       x1="105.03958"
+       y1="148.43124"
+       x2="90.487503"
+       y2="162.98334"
+       stroke="#666666"
+       stroke-width="0.529167"
+       stroke-linecap="round"
+       id="line22" />
+    <line
+       x1="105.03958"
+       y1="148.43124"
+       x2="90.487503"
+       y2="133.87917"
+       stroke="#666666"
+       stroke-width="0.529167"
+       stroke-linecap="round"
+       id="line23" />
+    <!-- Nodos en extremos -->
+    <circle
+       cx="105.03958"
+       cy="127.26458"
+       r="1.0583333"
+       fill="#4a90e2"
+       id="circle23"
+       style="stroke-width:0.264583" />
+    <circle
+       cx="126.20625"
+       cy="148.43124"
+       r="1.0583333"
+       fill="#50e3c2"
+       id="circle24"
+       style="stroke-width:0.264583" />
+    <circle
+       cx="105.03958"
+       cy="169.59792"
+       r="1.0583333"
+       fill="#4a90e2"
+       id="circle25"
+       style="stroke-width:0.264583" />
+    <circle
+       cx="83.872917"
+       cy="148.43124"
+       r="1.0583333"
+       fill="#50e3c2"
+       id="circle26"
+       style="stroke-width:0.264583" />
+    <circle
+       cx="119.59167"
+       cy="133.87917"
+       r="1.0583333"
+       fill="#666666"
+       id="circle27"
+       style="stroke-width:0.264583" />
+    <circle
+       cx="119.59167"
+       cy="162.98334"
+       r="1.0583333"
+       fill="#666666"
+       id="circle28"
+       style="stroke-width:0.264583" />
+    <circle
+       cx="90.487503"
+       cy="162.98334"
+       r="1.0583333"
+       fill="#666666"
+       id="circle29"
+       style="stroke-width:0.264583" />
+    <circle
+       cx="90.487503"
+       cy="133.87917"
+       r="1.0583333"
+       fill="#666666"
+       id="circle30"
+       style="stroke-width:0.264583"
+       inkscape:export-filename="circle30.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+</svg>

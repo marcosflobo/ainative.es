@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Native Newsletter</title>
+  <style>
+    :root {
+      --title: #0D0D0D;
+      --primary: #17E0B9;
+      --secondary: #0059FF;
+      --accent: #52F298;
+      --highlight: #8C6A03;
+      --text: #0D0D0D;
+      --background: #F9FAFB;
+      --light: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", sans-serif;
+    }
+
+    body {
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header img {
+      width: 80px;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--title);
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: var(--secondary);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    main {
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .benefits {
+      margin: 2rem auto;
+      max-width: 700px;
+      text-align: left;
+      background: var(--light);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .benefits h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .benefits ul {
+      list-style: none;
+    }
+
+    .benefits li {
+      margin: 0.5rem 0;
+      display: flex;
+      align-items: center;
+      color: var(--text);
+    }
+
+    .benefits li::before {
+      content: "✔️";
+      margin-right: 0.5rem;
+    }
+
+    form {
+      margin: 2rem auto;
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    input[type="email"] {
+      padding: 0.8rem 1rem;
+      width: 100%;
+      border-radius: 8px;
+      border: 2px solid var(--secondary);
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      background: var(--accent);
+      color: var(--text);
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: var(--highlight);
+      color: var(--light);
+    }
+
+    .trust {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 1rem;
+    }
+
+    .social-proof {
+      margin-top: 2rem;
+      font-style: italic;
+      color: var(--secondary);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+      .benefits {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://substackcdn.com/image/fetch/$s_!d0wd!,w_780,h_780,c_fill,f_webp,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb06692c9-9512-4a82-a9d6-74b3a4fe273b_168x168.png" alt="Logo AI Native">
+    <h1>AI Native Newsletter</h1>
+    <p>¿Cómo convertir tu plataforma SaaS a AI Native?</p>
+  </header>
+
+  <main>
+    <section class="benefits">
+      <h2>¿Por qué unirte?</h2>
+      <ul>
+        <li>Entiende los patrones de arquitectura orientados a la IA.</li>
+        <li>Conoce casos de éxito de SaaS que ya son AI Native.</li>
+        <li>Aprende a trabajar con la IA.</li>
+        <li>Aprovechate de las experiencias de líderes técnicos.</li>
+        <li>Accede a recursos exclusivos.</li>
+        <li>Y todo en español.</li>
+      </ul>
+    </section>
+
+    <form>
+      
+      <!-- <input type="email" placeholder="Tu mejor email ✉️" required> -->
+      <!-- <button type="submit">¡Quiero ser AI Native!</button> -->
+      <iframe src="https://ainativebrujula.substack.com/embed" width="480" height="320" style="background:#F9FAFB;" frameborder="0" scrolling="no"></iframe>
+      <p class="trust">1 email cada 2 semanas · Nada de spam · Tu correo está seguro</p>
+    </form>
+
+    <!-- <p class="social-proof">💬 “Gracias a AI Native estamos 6 meses por delante en nuestra adopción de IA” — CTO de startup SaaS</p> -->
+  </main>
+
+  <footer>
+    © 2025 AI Native Newsletter
+  </footer>
+</body>
+</html>
